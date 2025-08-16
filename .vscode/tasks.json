@@ -16,7 +16,7 @@
     {
       "label": "Run with Input/Output",
       "type": "shell",
-      "command": "./${fileBasenameNoExtension} < input.txt | tee output.txt",
+      "command": "./${fileBasenameNoExtension} < input.txt > output.txt",
       "options": {
         "cwd": "${fileDirname}"
       },
