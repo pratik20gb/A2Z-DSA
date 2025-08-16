@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile C++",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "${file}"
+      ],
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run with Input/Output",
+      "type": "shell",
+      "command": "./${fileBasenameNoExtension} < input.txt | tee output.txt",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "dependsOn": ["Compile C++"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
