@@ -166,6 +166,48 @@ void explainPQ()
 
     // all the other functions similar
 }
+void explainSet()
+{
+    set<int> st;
+    st.insert(1);
+    st.emplace(2);
+    st.insert(2); // {1,2} unique
+
+    // all the other functionalities are similar to that of vector
+
+    auto it = st.find(1);
+    int cnt = st.count(1);
+    st.erase(2);
+    for (auto it : st)
+    {
+        // cout << it << endl;
+    }
+}
+void explainMultiSet()
+{
+    // erases every 1
+    // can store duplicates
+    multiset<int> ms;
+    ms.insert(1);
+    ms.insert(1);
+    ms.insert(2);
+    ms.insert(1);
+    // ms.erase(1);
+    int cnt = ms.count(1);
+    ms.erase(ms.find(1));
+
+    for (auto it : ms)
+    {
+        cout << it << endl;
+    }
+}
+void explainUnorderedSet()
+{
+    unordered_set<int> st;
+    // lower bound and upper bound functions
+    // does not work , all the other functions are the same
+    // stores unique but not in sorted order like set
+}
 
 int main()
 {
@@ -173,6 +215,8 @@ int main()
     // explainVectors();
     // explainStack();
     // explainQueue();
-    explainPQ();
+    // explainPQ();
+    // explainSet();
+    explainMultiSet();
     return 0;
 }
