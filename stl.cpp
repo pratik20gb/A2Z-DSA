@@ -89,20 +89,90 @@ void explainVectors()
     // cout << t.size() << endl;
 
     // t.pop_back() // eg {10,20} output - {10}
-    
+
     // v1 - {20,30}
     // v2 - {60-40}
     // v1.swap(v2) - v1 -{60-40} , v2 - {20,30}
 
-
     // t.clear() erase the entire vector
-    cout<<v.empty();
+    cout << v.empty();
+}
 
+void explainList()
+{
+    list<int> ls;
+    ls.push_back(5);
+    ls.emplace_back(6);
+    ls.push_front(2);
+    ls.emplace_front();
+    // rest function same as vector
+}
+void explainDequee()
+{
+    deque<int> dq;
+    // all functions are similar to vectors
+}
+void explainStack()
+{
+    stack<int> st;
+    // stack is LIFO last in first out
+    // in stack there is no index based cout there are only 3 functoins - push pop top
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.emplace(5);
+
+    cout << st.top();
+    cout << st.size();
+    cout << st.empty();
+
+    stack<int> st1, st2;
+    st1.swap(st2);
+}
+void explainQueue()
+{
+    queue<int> q;
+    q.push(1);
+    q.push(2);
+    q.emplace(3);  // {1,2,3}
+    q.back() += 5; // {1,2,3,8}
+
+    cout << q.back() << endl;
+    cout << q.front() << endl;
+    q.pop();
+    cout << q.front() << endl;
+
+    // size swap empty similar to stack
+}
+void explainPQ()
+{
+
+    // largest element stays at the top (Max heap)
+    priority_queue<int> pq;
+    pq.push(1);
+    pq.push(2);     //{2,1}
+    pq.emplace(10); //{10,2,1}
+    cout << pq.top();
+    pq.pop(); // pops out 10
+
+    // Minimum Heap
+
+    priority_queue<int, vector<int>, greater<int>> pqq;
+    pqq.push(1);
+    pqq.push(2);       //{1,2}
+    pqq.emplace(10);   //{1,2,10}
+    cout << pqq.top(); //{1}
+
+    // all the other functions similar
 }
 
 int main()
 {
     // explainPair();
-    explainVectors();
+    // explainVectors();
+    // explainStack();
+    // explainQueue();
+    explainPQ();
     return 0;
 }
