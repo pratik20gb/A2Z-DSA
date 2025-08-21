@@ -41,11 +41,13 @@ Recursion and Backtracking
 Graph Algorithms (DFS, BFS, Dijkstra's, etc.)
 C++ Basics:
 
+<div align="center">
 <!-- C++ -->
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
 
 <!-- DSA (using LeetCode + GeeksforGeeks logos since they represent DSA practice) -->
 <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
+</div>
 
 <div align="center">
 <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajBvMGs4ZGljb2Jjang1Y29nZDY3NmZzZmZ0M3NzdnNhemUyOWp6bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UNQ8B2nvmT5fhP9H5h/giphy.webp" alt="Banner Image 2" width="100" height="100">
