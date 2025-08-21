@@ -208,7 +208,24 @@ void explainUnorderedSet()
     // does not work , all the other functions are the same
     // stores unique but not in sorted order like set
 }
+void explainMap()
+{
+    // in map there are two thing key and value
+    // map stores data in sorted order just like sets
+    map<int, int> mpp;
+    // map<int, pair<int, int>> mpp;
+    // map<pair<int, int>, int> mpp;
 
+    mpp[1] = 2; // on the key 1 store the value 2
+    mpp.insert({2, 1});
+    mpp.emplace(3, 1);
+    // mpp[{2, 3}] = 10;
+
+    for (auto it : mpp)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
+}
 int main()
 {
     // explainPair();
@@ -217,6 +234,7 @@ int main()
     // explainQueue();
     // explainPQ();
     // explainSet();
-    explainMultiSet();
+    // explainMultiSet();
+    explainMap();
     return 0;
 }
