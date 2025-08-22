@@ -12,7 +12,7 @@ int main()
 {
     int n;
     cin >> n;
-    cout << fibo(n) << endl;
+   cout<< fibo(n);
 
     return 0;
 }
