@@ -12,9 +12,11 @@ int main()
     string s;
     cin >> s;
     // precompute
-    int hash[26] = {0};
-   
-   
+    int hash[26] = {0}; // we can take 256 here and cut the -a part it will map correctly;
+    for (int i = 0; i < s.size(); i++)
+    {
+        hash[s[i] - 'a']++;
+    }
     int q;
     cin >> q;
     while (q--)
@@ -22,6 +24,7 @@ int main()
         char c;
         cin >> c;
         // fetch
+        cout << hash[c-'a'] << endl;
     }
     return 0;
 }
